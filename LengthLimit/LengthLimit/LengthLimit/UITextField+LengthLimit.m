@@ -149,9 +149,7 @@
         case ImportChatTypeAll:
             retuStr = @"";
             break;
-            
-        default:
-            break;
+
     }
     return retuStr;
 }

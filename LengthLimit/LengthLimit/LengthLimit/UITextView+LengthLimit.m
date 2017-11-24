@@ -40,8 +40,8 @@
     self.MAXLENGTH = [NSNumber numberWithInteger:MAXLENGTH];
     self.regular = [self ImportChatTypeToRegular:type];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textViewChange:) name:UITextViewTextDidChangeNotification object:nil];
-    
 }
+
 - (void)dealloc{
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
@@ -156,8 +156,6 @@
             retuStr = @"";
             break;
             
-        default:
-            break;
     }
     return retuStr;
 }
